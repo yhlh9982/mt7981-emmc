@@ -61,7 +61,6 @@ UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"  #luci-app
 
 UPDATE_PACKAGE "ddns-go" "sirpdboy/luci-app-ddns-go" "main"  #luci-app-ddns-go
 UPDATE_PACKAGE "netspeedtest" "sirpdboy/luci-app-netspeedtest" "js" "" "homebox speedtest"  #homebox speedtest测速
-UPDATE_PACKAGE "luci-app-partexp" "sirpdboy/luci-app-partexp" "main"   #一键自动格式化分区、扩容、自动挂载插件
 UPDATE_PACKAGE "poweroffdevice" "sirpdboy/luci-app-poweroffdevice" "js"   #关机
 UPDATE_PACKAGE "luci-app-taskplan" "sirpdboy/luci-app-taskplan" "master"    #计划任务
 UPDATE_PACKAGE "watchdog" "sirpdboy/luci-app-watchdog" "main"  #看门狗

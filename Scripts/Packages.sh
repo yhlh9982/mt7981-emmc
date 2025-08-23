@@ -74,14 +74,20 @@ UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"   #集客 AC 控制�
 UPDATE_PACKAGE "open-app-filter" "destan19/OpenAppFilter" "master" "" "luci-app-appfilter oaf"  #应用过滤(OAF)
 UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-app-wolplus"   #luci-app-wolplus  luci-app-timewol
 
-UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"   #mosdns
+#mosdns
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+# remove v2ray-geodata package from feeds (openwrt-22.03 & master)
+rm -rf feeds/packages/net/v2ray-geodata
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+
 UPDATE_PACKAGE "openlist2" "sbwml/luci-app-openlist2" "main"    #alist的新替换openlist
 UPDATE_PACKAGE "qbittorrent" "sbwml/luci-app-qbittorrent" "master" "" "qt6base qt6tools rblibtorrent"  #qbittorrent下载
 
 UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
 UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
 
-UPDATE_PACKAGE "packages_lang_golang1" "sbwml/packages_lang_golang" "24.x" 
 #更新软件包版本
 UPDATE_VERSION() {
 	local PKG_NAME=$1

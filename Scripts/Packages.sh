@@ -81,6 +81,7 @@ UPDATE_PACKAGE "qbittorrent" "sbwml/luci-app-qbittorrent" "master" "" "qt6base q
 UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
 UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
 
+UPDATE_PACKAGE "packages_lang_golang1" "sbwml/packages_lang_golang" "24.x" 
 #更新软件包版本
 UPDATE_VERSION() {
 	local PKG_NAME=$1

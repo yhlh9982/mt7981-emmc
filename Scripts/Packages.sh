@@ -85,6 +85,7 @@ rm -rf feeds/packages/net/v2ray-geodata
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
+#smartdns
 git clone --depth=1 -b master https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns #smartdns
 git clone --depth=1 https://github.com/pymumu/openwrt-smartdns.git package/openwrt-smartdns # smartdns
 

@@ -43,7 +43,6 @@ UPDATE_PACKAGE() {
 # 调用示例
 # UPDATE_PACKAGE "OpenAppFilter" "destan19/OpenAppFilter" "master" "" "custom_name1 custom_name2"
 # UPDATE_PACKAGE "open-app-filter" "destan19/OpenAppFilter" "master" "" "luci-app-appfilter oaf" 这样会把原有的open-app-filter，luci-app-appfilter，oaf相关组件删除，不会出现coremark错误。
-
 # UPDATE_PACKAGE "包名" "项目地址" "项目分支" "pkg/name，可选，pkg为从大杂烩中单独提取包名插件；name为重命名为包名"
 #主题
 UPDATE_PACKAGE "argon" "sbwml/luci-theme-argon" "openwrt-24.10"
@@ -76,6 +75,12 @@ UPDATE_PACKAGE "fancontrol" "rockjake/luci-app-fancontrol" "main"   #Openwrt简�
 UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"   #集客 AC 控制器
 UPDATE_PACKAGE "open-app-filter" "destan19/OpenAppFilter" "master" "" "luci-app-appfilter oaf"  #应用过滤(OAF)
 UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-app-wolplus"   #luci-app-wolplus  luci-app-timewol
+
+#istore系列组件
+UPDATE_PACKAGE "nas-packages" "linkease/nas-packages" "master"  #istroe系列插件
+UPDATE_PACKAGE "nas-packages-luci" "linkease/nas-packages-luci" "main"  #istroe系列插件luci
+UPDATE_PACKAGE "istore-ui" "linkease/istore-ui" "main"  #istroe ui
+UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main"  #luci-app-store
 
 #mosdns
 rm -rf feeds/packages/lang/golang

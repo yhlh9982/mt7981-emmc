@@ -77,10 +77,10 @@ UPDATE_PACKAGE "open-app-filter" "destan19/OpenAppFilter" "master" "" "luci-app-
 UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-app-wolplus"   #luci-app-wolplus  luci-app-timewol
 
 #istore系列组件
-UPDATE_PACKAGE "nas-packages" "linkease/nas-packages" "master"  #istroe系列插件
-UPDATE_PACKAGE "nas-packages-luci" "linkease/nas-packages-luci" "main"  #istroe系列插件luci
-UPDATE_PACKAGE "istore-ui" "linkease/istore-ui" "main"  #istroe ui
-UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main"  #luci-app-store
+#UPDATE_PACKAGE #UPDATE_PACKAGE "nas-packages" "linkease/nas-pack#istroe系列插件
+#UPDATE_PACKAGE #UPDATE_PACKAGE "nas-packages-luci" "linkease/nas-package#istroe系列插件luci
+#UPDATE_PACKAGE #UPDATE_PACKAGE "istore-ui" "linkease/ist#istroe ui
+UPDATE_PACKAGE "istore" "linkease/istore" "main" 
 
 #mosdns
 rm -rf feeds/packages/lang/golang

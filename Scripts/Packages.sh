@@ -76,11 +76,6 @@ UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"   #集客 AC 控制�
 UPDATE_PACKAGE "open-app-filter" "destan19/OpenAppFilter" "master" "" "luci-app-appfilter oaf"  #应用过滤(OAF)
 UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-app-wolplus"   #luci-app-wolplus  luci-app-timewol
 
-#istore系列组件
-#UPDATE_PACKAGE #UPDATE_PACKAGE "nas-packages" "linkease/nas-pack#istroe系列插件
-#UPDATE_PACKAGE #UPDATE_PACKAGE "nas-packages-luci" "linkease/nas-package#istroe系列插件luci
-#UPDATE_PACKAGE #UPDATE_PACKAGE "istore-ui" "linkease/ist#istroe ui
-
 #mosdns
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
@@ -139,9 +134,3 @@ UPDATE_VERSION() {
 #UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
 #UPDATE_VERSION "sing-box"
 #UPDATE_VERSION "tailscale"
-
-# istroe
-echo >> feeds.conf.default
-echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
-./scripts/feeds update istore
-./scripts/feeds install -d y -p istore luci-app-store

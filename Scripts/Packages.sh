@@ -80,7 +80,6 @@ UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-ap
 #UPDATE_PACKAGE #UPDATE_PACKAGE "nas-packages" "linkease/nas-pack#istroe系列插件
 #UPDATE_PACKAGE #UPDATE_PACKAGE "nas-packages-luci" "linkease/nas-package#istroe系列插件luci
 #UPDATE_PACKAGE #UPDATE_PACKAGE "istore-ui" "linkease/ist#istroe ui
-UPDATE_PACKAGE "istore" "linkease/istore" "main" 
 
 #mosdns
 rm -rf feeds/packages/lang/golang

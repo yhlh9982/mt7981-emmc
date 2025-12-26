@@ -139,3 +139,9 @@ UPDATE_VERSION() {
 #UPDATE_VERSION "软件包名" "测试版，true，可选，默认为否"
 #UPDATE_VERSION "sing-box"
 #UPDATE_VERSION "tailscale"
+
+# istroe
+echo >> feeds.conf.default
+echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
+./scripts/feeds update istore
+./scripts/feeds install -d y -p istore luci-app-store

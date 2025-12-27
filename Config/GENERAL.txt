@@ -49,6 +49,7 @@ CONFIG_PACKAGE_luci-app-autoreboot=y
 CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-app-diskman=y
 CONFIG_PACKAGE_luci-app-advancedplus=y  #高级设置
+# CONFIG_PACKAGE_luci-app-qmodem=y  #移动网络模块
 # CONFIG_PACKAGE_luci-app-taskplan=y  #任务设置2.0版
 # CONFIG_PACKAGE_luci-app-gecoosac=y  #集客ac控制
 # CONFIG_PACKAGE_luci-app-poweroffdevice=y  #关机

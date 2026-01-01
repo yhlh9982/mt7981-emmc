@@ -35,6 +35,8 @@ CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_zyxel_ex5700-telenor=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_zyxel_ex5700-telenor=""
 CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_yvr_x6=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_yvr_x6=""
+CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_clx_s20p=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_clx_s20p=""
 
 #
 # ========================================

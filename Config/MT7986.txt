@@ -13,6 +13,8 @@ CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_glinet_gl-mt6000=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_glinet_gl-mt6000=""
 CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_clx_s20p=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_clx_s20p=""
+CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6088=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_tplink_tl-xdr6088=""
 
 #
 # ========================================

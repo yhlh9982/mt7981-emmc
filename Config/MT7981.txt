@@ -1,13 +1,12 @@
+#
 # ========================================
-# 备注：使用padavanonly/immortalwrt-mt798x-6.6提供的defconfig/mt7981-ax3000.config 分类整理生成
-# 说明：此部分定义了固件编译的目标硬件平台和具体的设备型号。
+# 备注：使用padavanonly/immortalwrt-mt798x-6.6提供的defconfig/mt7981-ax3000.config 分类整理生成 整理时间 2026年1月3日
+# 说明：此部分定义了固件编译的目标硬件平台 (MediaTek MT7981) 和具体的设备型号。
 # ========================================
 #
 CONFIG_TARGET_mediatek=y
-CONFIG_TARGET_mediatek_filogic=y
 CONFIG_TARGET_mediatek_mt7981=y
 CONFIG_TARGET_MULTI_PROFILE=y
-CONFIG_TARGET_PER_DEVICE_ROOTFS=y
 CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_cmcc_rax3000m-emmc=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_cmcc_rax3000m-emmc=""
 CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_huasifei_wh3000-emmc=y
@@ -16,6 +15,7 @@ CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_sl_3000-emmc=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_sl_3000-emmc=""
 CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_umi_uax3000e=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_umi_uax3000e=""
+
 #
 # ========================================
 # 备注：基础系统与编译选项
@@ -25,6 +25,7 @@ CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_umi_uax3000e=""
 CONFIG_DEVEL=y
 CONFIG_TOOLCHAINOPTS=y
 CONFIG_BUSYBOX_CUSTOM=y
+CONFIG_TARGET_PER_DEVICE_ROOTFS=y
 CONFIG_BUSYBOX_CONFIG_BLKID=y
 CONFIG_BUSYBOX_CONFIG_FEATURE_BLKID_TYPE=y
 CONFIG_BUSYBOX_CONFIG_VOLUMEID=y
@@ -195,26 +196,6 @@ CONFIG_PACKAGE_iptables-mod-proto=y
 CONFIG_PACKAGE_iptables-mod-tee=y
 CONFIG_PACKAGE_iptables-mod-tproxy=y
 CONFIG_PACKAGE_iptables-mod-u32=y
-CONFIG_PACKAGE_kmod-ipt-compat-xtables=y
-CONFIG_PACKAGE_kmod-ipt-conntrack-extra=y
-CONFIG_PACKAGE_kmod-ipt-extra=y
-CONFIG_PACKAGE_kmod-ipt-filter=y
-CONFIG_PACKAGE_kmod-ipt-hashlimit=y
-CONFIG_PACKAGE_kmod-ipt-iface=y
-CONFIG_PACKAGE_kmod-ipt-ipmark=y
-CONFIG_PACKAGE_kmod-ipt-ipopt=y
-CONFIG_PACKAGE_kmod-ipt-iprange=y
-CONFIG_PACKAGE_kmod-ipt-ipv4options=y
-CONFIG_PACKAGE_kmod-ipt-nat-extra=y
-CONFIG_PACKAGE_kmod-ipt-offload=y
-CONFIG_PACKAGE_kmod-ipt-proto=y
-CONFIG_PACKAGE_kmod-ipt-raw6=y
-CONFIG_PACKAGE_kmod-ipt-tee=y
-CONFIG_PACKAGE_kmod-ipt-tproxy=y
-CONFIG_PACKAGE_kmod-ipt-u32=y
-
-CONFIG_PACKAGE_kmod-nft-socket=y
-CONFIG_PACKAGE_kmod-netlink-diag=y
 
 # --- 无线与网络驱动 ---
 CONFIG_PACKAGE_iw=y
@@ -255,6 +236,23 @@ CONFIG_PACKAGE_kmod-fs-vfat=y
 CONFIG_PACKAGE_kmod-ifb=y
 CONFIG_PACKAGE_kmod-inet-diag=y
 CONFIG_PACKAGE_kmod-ip6tables-extra=y
+CONFIG_PACKAGE_kmod-ipt-compat-xtables=y
+CONFIG_PACKAGE_kmod-ipt-conntrack-extra=y
+CONFIG_PACKAGE_kmod-ipt-extra=y
+CONFIG_PACKAGE_kmod-ipt-filter=y
+CONFIG_PACKAGE_kmod-ipt-hashlimit=y
+CONFIG_PACKAGE_kmod-ipt-iface=y
+CONFIG_PACKAGE_kmod-ipt-ipmark=y
+CONFIG_PACKAGE_kmod-ipt-ipopt=y
+CONFIG_PACKAGE_kmod-ipt-iprange=y
+CONFIG_PACKAGE_kmod-ipt-ipv4options=y
+CONFIG_PACKAGE_kmod-ipt-nat-extra=y
+CONFIG_PACKAGE_kmod-ipt-offload=y
+CONFIG_PACKAGE_kmod-ipt-proto=y
+CONFIG_PACKAGE_kmod-ipt-raw6=y
+CONFIG_PACKAGE_kmod-ipt-tee=y
+CONFIG_PACKAGE_kmod-ipt-tproxy=y
+CONFIG_PACKAGE_kmod-ipt-u32=y
 CONFIG_PACKAGE_kmod-lib-crc32c=y
 CONFIG_PACKAGE_kmod-lib-lzo=y
 CONFIG_PACKAGE_kmod-mediatek_hnat=y
@@ -273,43 +271,6 @@ CONFIG_PACKAGE_kmod-zram=y
 CONFIG_PACKAGE_switch=y
 CONFIG_PACKAGE_tc-mod-iptables=y
 CONFIG_PACKAGE_tc-tiny=y
-
-# usb&emmc
-CONFIG_PACKAGE_kmod-ata-core=y
-CONFIG_PACKAGE_kmod-fs-autofs4=y
-CONFIG_PACKAGE_kmod-fs-ext4=y
-CONFIG_PACKAGE_kmod-fs-f2fs=y
-CONFIG_PACKAGE_kmod-fs-vfat=y
-CONFIG_PACKAGE_kmod-fuse=y
-CONFIG_PACKAGE_kmod-mmc=y
-CONFIG_PACKAGE_kmod-nls-base=y
-CONFIG_PACKAGE_kmod-nls-cp437=y
-CONFIG_PACKAGE_kmod-nls-iso8859-1=y
-CONFIG_PACKAGE_kmod-nls-utf8=y
-CONFIG_PACKAGE_kmod-scsi-core=y
-CONFIG_PACKAGE_kmod-usb-core=y
-CONFIG_PACKAGE_kmod-usb-dwc3=y
-CONFIG_PACKAGE_kmod-usb-net=y
-CONFIG_PACKAGE_kmod-usb-net-cdc-eem=y
-CONFIG_PACKAGE_kmod-usb-net-cdc-ether=y
-CONFIG_PACKAGE_kmod-usb-net-cdc-mbim=y
-CONFIG_PACKAGE_kmod-usb-net-cdc-ncm=y
-CONFIG_PACKAGE_kmod-usb-net-cdc-subset=y
-CONFIG_PACKAGE_kmod-usb-net-huawei-cdc-ncm=y
-CONFIG_PACKAGE_kmod-usb-net-ipheth=y
-CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=y
-CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-fibocom=y
-CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-quectel=y
-CONFIG_PACKAGE_kmod-usb-net-rndis=y
-CONFIG_PACKAGE_kmod-usb-net-rtl8150=y
-CONFIG_PACKAGE_kmod-usb-net-rtl8152=y
-CONFIG_PACKAGE_kmod-usb-ohci=y
-CONFIG_PACKAGE_kmod-usb-storage=y
-CONFIG_PACKAGE_kmod-usb-storage-extras=y
-CONFIG_PACKAGE_kmod-usb-storage-uas=y
-CONFIG_PACKAGE_kmod-usb-uhci=y
-CONFIG_PACKAGE_kmod-usb-xhci=y
-CONFIG_PACKAGE_kmod-usb3=y
 
 # --- 依赖库 ---
 CONFIG_PACKAGE_libatomic=y
@@ -339,7 +300,6 @@ CONFIG_PACKAGE_libuuid=y
 # CONFIG_WOLFSSL_HAS_ECC25519 is not set
 
 # --- LuCI Web 界面与应用 ---
-CONFIG_PACKAGE_haproxy=y
 CONFIG_PACKAGE_blockd=y
 CONFIG_PACKAGE_datconf=y
 CONFIG_PACKAGE_datconf-lua=y
@@ -365,26 +325,6 @@ CONFIG_PACKAGE_luci-i18n-turboacc-mtk-zh-cn=y
 # --- LuCI 应用: 流量监控 ---
 CONFIG_PACKAGE_luci-app-wrtbwmon=y
 
-# --- 其他 ---
-CONFIG_PACKAGE_openssh-keygen=y
-CONFIG_PACKAGE_openssh-sftp-server=y
-
-#
-# ========================================
-# 备注：未启用的主要特性 (供参考)
-# ========================================
-#
-# CONFIG_AFALG_FALLBACK is not set
-# CONFIG_MTK_BAND_STEERING is not set
-# CONFIG_MTK_DEFAULT_5G_PROFILE is not set
-# CONFIG_MTK_MAC_REPEATER_SUPPORT is not set
-# CONFIG_MTK_MULTI_PROFILE_SUPPORT is not set
-# CONFIG_MTK_PCIE_ASPM_DYM_CTRL_SUPPORT is not set
-# CONFIG_MTK_PRE_CAL_TRX_SET1_SUPPORT is not set
-# CONFIG_MTK_PRE_CAL_TRX_SET2_SUPPORT is not set
-# CONFIG_MTK_RLM_CAL_CACHE_SUPPORT is not set
-# CONFIG_MTK_SNIFFER_RADIOTAP_SUPPORT is not set
-
 # --- LuCI 应用: 代理插件配置 ---
 # Rclone (未选择任何组件)
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
@@ -404,3 +344,23 @@ CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_NONE_Server=y
 # CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Trojan is not set
 # CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray is not set
 # CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray_plugin is not set
+
+# --- 其他软件包 ---
+CONFIG_PACKAGE_openssh-keygen=y
+CONFIG_PACKAGE_openssh-sftp-server=y
+
+#
+# ========================================
+# 备注：未启用的主要特性 (供参考)
+# ========================================
+#
+# CONFIG_AFALG_FALLBACK is not set
+# CONFIG_MTK_BAND_STEERING is not set
+# CONFIG_MTK_DEFAULT_5G_PROFILE is not set
+# CONFIG_MTK_MAC_REPEATER_SUPPORT is not set
+# CONFIG_MTK_MULTI_PROFILE_SUPPORT is not set
+# CONFIG_MTK_PCIE_ASPM_DYM_CTRL_SUPPORT is not set
+# CONFIG_MTK_PRE_CAL_TRX_SET1_SUPPORT is not set
+# CONFIG_MTK_PRE_CAL_TRX_SET2_SUPPORT is not set
+# CONFIG_MTK_RLM_CAL_CACHE_SUPPORT is not set
+# CONFIG_MTK_SNIFFER_RADIOTAP_SUPPORT is not set

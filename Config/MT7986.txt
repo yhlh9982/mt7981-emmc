@@ -16,8 +16,6 @@ CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_jdcloud_re-cp-03=""
 CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_netcore_n60-pro=y
 CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_yvr_x6=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_yvr_x6=""
-CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_clx_s20p=y
-CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_clx_s20p=""
 
 #
 # ========================================

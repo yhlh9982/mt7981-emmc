@@ -1,7 +1,7 @@
 #
 # ========================================
 # 备注：使用padavanonly/immortalwrt-mt798x-6.6提供的defconfig/mt7975-ipailna-high-power.config 分类整理生成 整理时间 2026年1月3日
-# 说明：此部分定义了固件编译的目标硬件平台 (MediaTek MT7986) 和具体的设备型号。
+# 说明：此mt7975-ipailna-high-power.config 适用特定设备，并不具备普遍性
 # ========================================
 #
 CONFIG_TARGET_mediatek=y
@@ -11,12 +11,8 @@ CONFIG_TARGET_PER_DEVICE_ROOTFS=y
 CONFIG_HAS_SUBTARGETS=y
 CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_clx_s20p=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_clx_s20p=""
-CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_glinet_gl-mt6000=y
-CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_glinet_gl-mt6000=""
-CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6086=y
-CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_tplink_tl-xdr6086=""
-CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6088=y
-CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_tplink_tl-xdr6088=""
+CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_netcore_n60-pro=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_filogic_DEVICE_netcore_n60-pro=""
 
 #
 # ========================================

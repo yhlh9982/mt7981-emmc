@@ -75,12 +75,14 @@ if [ -f "$DM_FILE" ]; then
 	cd $PKG_PATH && echo "diskman has been fixed!"
 fi
 
-#移除luci-app-attendedsysupgrade概览页面
-ASU_FILE=$(find ../feeds/luci/applications/luci-app-attendedsysupgrade/ -type f -name "11_upgrades.js")
-if [ -f "$ASU_FILE" ]; then
+#修复luci-app-netspeedtest相关问题
+if [ -d *"luci-app-netspeedtest"* ]; then
 	echo " "
 
-	rm -rf $ASU_FILE
+	cd ./luci-app-netspeedtest/
 
-	cd $PKG_PATH && echo "attendedsysupgrade has been fixed!"
+	sed -i '$a\exit 0' ./netspeedtest/files/99_netspeedtest.defaults
+	sed -i 's/ca-certificates/ca-bundle/g' ./speedtest-cli/Makefile
+
+	cd $PKG_PATH && echo "netspeedtest has been fixed!"
 fi

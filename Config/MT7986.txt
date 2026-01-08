@@ -15,7 +15,6 @@ CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6086=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_tplink_tl-xdr6086=""
 CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6088=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_tplink_tl-xdr6088=""
-
 #
 # ========================================
 # 备注：基础系统与编译选项

@@ -1,7 +1,7 @@
 #
 # ========================================
-# 备注：目标平台与设备
-# 说明：此部分定义了固件编译的目标硬件平台 (MediaTek MT7986) 和具体的设备型号。
+# 备注：使用padavanonly/immortalwrt-mt798x-6.6提供的defconfig/mt7975-ipailna-high-power.config 分类整理生成 整理时间 2026年1月8日
+# 说明：此mt7975-ipailna-high-power.config 适用特定设备，并不具备普遍性
 # ========================================
 #
 CONFIG_TARGET_mediatek=y

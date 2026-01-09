@@ -9,12 +9,12 @@ CONFIG_TARGET_mediatek_mt7986=y
 CONFIG_TARGET_MULTI_PROFILE=y
 CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_clx_s20p=y
 CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_clx_s20p=""
-CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_glinet_gl-mt6000=y
-CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_glinet_gl-mt6000=""
-CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6086=y
-CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_tplink_tl-xdr6086=""
-CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6088=y
-CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_tplink_tl-xdr6088=""
+# CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_glinet_gl-mt6000=y
+# CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_glinet_gl-mt6000=""
+# CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6086=y
+# CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_tplink_tl-xdr6086=""
+# CONFIG_TARGET_DEVICE_mediatek_mt7986_DEVICE_tplink_tl-xdr6088=y
+# CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7986_DEVICE_tplink_tl-xdr6088=""
 #
 # ========================================
 # 备注：基础系统与编译选项

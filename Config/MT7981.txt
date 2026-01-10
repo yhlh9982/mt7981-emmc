@@ -222,12 +222,12 @@ CONFIG_PACKAGE_libyaml=y
 # 说明：需要编译的 Linux 内核模块。
 # ========================================
 #
-CONFIG_PACKAGE_kmod-ata-core=y
 CONFIG_PACKAGE_kmod-bonding=y
 CONFIG_PACKAGE_kmod-conninfra=y
 CONFIG_PACKAGE_kmod-crypto-acompress=y
 CONFIG_PACKAGE_kmod-crypto-ccm=y
 CONFIG_PACKAGE_kmod-crypto-cmac=y
+CONFIG_PACKAGE_kmod-crypto-crc32c=y
 CONFIG_PACKAGE_kmod-crypto-ctr=y
 CONFIG_PACKAGE_kmod-crypto-des=y
 CONFIG_PACKAGE_kmod-crypto-gcm=y
@@ -246,11 +246,9 @@ CONFIG_PACKAGE_kmod-cryptodev=y
 CONFIG_PACKAGE_kmod-ebtables=y
 CONFIG_PACKAGE_kmod-ebtables-ipv4=y
 CONFIG_PACKAGE_kmod-ebtables-ipv6=y
-CONFIG_PACKAGE_kmod-fs-autofs4=y
 # CONFIG_PACKAGE_kmod-fs-exfat is not set
 # CONFIG_PACKAGE_kmod-fs-ext4 is not set
 # CONFIG_PACKAGE_kmod-fs-ntfs3 is not set
-CONFIG_PACKAGE_kmod-fs-vfat=y
 CONFIG_PACKAGE_kmod-ifb=y
 CONFIG_PACKAGE_kmod-inet-diag=y
 CONFIG_PACKAGE_kmod-ip6tables-extra=y
@@ -276,25 +274,15 @@ CONFIG_PACKAGE_kmod-ipt-u32=y
 CONFIG_PACKAGE_kmod-lib-crc32c=y
 CONFIG_PACKAGE_kmod-lib-lzo=y
 CONFIG_PACKAGE_kmod-mediatek_hnat=y
-# CONFIG_PACKAGE_kmod-mmc is not set
 CONFIG_PACKAGE_kmod-mt_wifi=y
 CONFIG_PACKAGE_kmod-netlink-diag=y
 CONFIG_PACKAGE_kmod-nf-conncount=y
 CONFIG_PACKAGE_kmod-nf-dup-inet=y
 CONFIG_PACKAGE_kmod-nf-flow=y
 CONFIG_PACKAGE_kmod-nft-compat=y
-CONFIG_PACKAGE_kmod-nls-base=y
-CONFIG_PACKAGE_kmod-nls-cp437=y
-CONFIG_PACKAGE_kmod-nls-iso8859-1=y
-CONFIG_PACKAGE_kmod-nls-utf8=y
 CONFIG_PACKAGE_kmod-sched-core=y
-CONFIG_PACKAGE_kmod-scsi-core=y
 CONFIG_PACKAGE_kmod-tcp-bbr=y
 CONFIG_PACKAGE_kmod-tun=y
-# CONFIG_PACKAGE_kmod-usb-core is not set
-# CONFIG_PACKAGE_kmod-usb-storage is not set
-# CONFIG_PACKAGE_kmod-usb-storage-extras is not set
-# CONFIG_PACKAGE_kmod-usb-storage-uas is not set
 CONFIG_PACKAGE_kmod-warp=y
 CONFIG_PACKAGE_kmod-zram=y
 
@@ -307,10 +295,15 @@ CONFIG_PACKAGE_kmod-zram=y
 CONFIG_PACKAGE_lua-cjson=y
 CONFIG_PACKAGE_luci-app-eqos-mtk=y
 CONFIG_PACKAGE_luci-app-mtwifi-cfg=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NONE_V2RAY=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_NONE_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_NONE_Server=y
 CONFIG_PACKAGE_luci-app-turboacc-mtk=y
 CONFIG_PACKAGE_luci-app-wrtbwmon=y
-# CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
-# CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
+CONFIG_PACKAGE_luci-i18n-eqos-mtk-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-mtwifi-cfg-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-turboacc-mtk-zh-cn=y
+CONFIG_PACKAGE_luci-theme-bootstrap-mod=y
 
 #
 # ========================================
@@ -319,23 +312,13 @@ CONFIG_PACKAGE_luci-app-wrtbwmon=y
 # ========================================
 #
 # CONFIG_GDB is not set
-# CONFIG_PACKAGE_automount is not set
 CONFIG_PACKAGE_bash=y
-# CONFIG_PACKAGE_blkid is not set
 CONFIG_PACKAGE_blockd=y
-# CONFIG_PACKAGE_blockdev is not set
-# CONFIG_PACKAGE_coremark is not set
 CONFIG_PACKAGE_coreutils=y
 CONFIG_PACKAGE_coreutils-base64=y
 CONFIG_PACKAGE_coreutils-nohup=y
-# CONFIG_PACKAGE_e2fsprogs is not set
-# CONFIG_PACKAGE_f2fsck is not set
-# CONFIG_PACKAGE_fdisk is not set
 CONFIG_PACKAGE_htop=y
-# CONFIG_PACKAGE_mkf2fs is not set
-# CONFIG_PACKAGE_mmc-utils is not set
 CONFIG_PACKAGE_nano=y
-# CONFIG_PACKAGE_ntfs3-mount is not set
 CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_zram-swap=y
 CONFIG_ZRAM_DEF_COMP_LZORLE=y
@@ -391,51 +374,4 @@ CONFIG_PACKAGE_openssh-sftp-server=y
 CONFIG_PACKAGE_openssl-util=y
 CONFIG_PACKAGE_regs=y
 CONFIG_PACKAGE_resolveip=y
-CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=y
-CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir=y
-CONFIG_PACKAGE_switch=y
-CONFIG_PACKAGE_tc-mod-iptables=y
-CONFIG_PACKAGE_tc-tiny=y
-CONFIG_PACKAGE_tcpdump=y
-CONFIG_PACKAGE_tcping=y
-CONFIG_PACKAGE_vlmcsd=y
-CONFIG_PACKAGE_wget-ssl=y
-CONFIG_PACKAGE_wifi-dats=y
-CONFIG_PACKAGE_wifi-scripts=y
-CONFIG_PACKAGE_wireless-regdb=y
-CONFIG_PACKAGE_wireless-tools=y
-CONFIG_PACKAGE_wrtbwmon=y
-CONFIG_PACKAGE_xtables-nft=y
-
-#
-# ========================================
-# 备注：软件包 - Ruby 解释器
-# 说明：Ruby 编程语言及其相关模块。
-# ========================================
-#
-CONFIG_PACKAGE_ruby=y
-CONFIG_PACKAGE_ruby-bigdecimal=y
-CONFIG_PACKAGE_ruby-date=y
-CONFIG_PACKAGE_ruby-digest=y
-CONFIG_PACKAGE_ruby-enc=y
-CONFIG_PACKAGE_ruby-pstore=y
-CONFIG_PACKAGE_ruby-psych=y
-CONFIG_PACKAGE_ruby-stringio=y
-CONFIG_PACKAGE_ruby-yaml=y
-
-#
-# ========================================
-# 备注：未启用的主要特性 (供参考)
-# ========================================
-#
-# CONFIG_WOLFSSL_HAS_ECC25519 is not set
-# CONFIG_MTK_BAND_STEERING is not set
-# CONFIG_MTK_DEFAULT_5G_PROFILE is not set
-# CONFIG_MTK_MAC_REPEATER_SUPPORT is not set
-# CONFIG_MTK_MULTI_PROFILE_SUPPORT is not set
-# CONFIG_MTK_PCIE_ASPM_DYM_CTRL_SUPPORT is not set
-# CONFIG_MTK_PRE_CAL_TRX_SET1_SUPPORT is not set
-# CONFIG_MTK_PRE_CAL_TRX_SET2_SUPPORT is not set
-# CONFIG_MTK_RLM_CAL_CACHE_SUPPORT is not set
-# CONFIG_MTK_SNIFFER_RADIOTAP_SUPPORT is not set
-# CONFIG_PACKAGE_blkdiscard is not set
+CONFIG_PACKAGE_sh
